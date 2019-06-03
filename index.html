@@ -8,9 +8,9 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> 
   <link rel="stylesheet" href="styles.css">
   <title>YouTube Video Player</title>
 </head>
@@ -20,8 +20,8 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"><i class="fab fa-youtube"></i>YouTube</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -36,33 +36,106 @@
   </nav>
 
   <div class="container-fluid">
-    <div class="row left-column">
-      <div class="col-9" color: white;>
+    
+    <div class="row main">
+      
+      <div class="col-9">
+
         <div class="row video">
           <iframe src="https://www.youtube.com/embed/UCbVh7-zyZ8" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+
         <div class="row title">
           <h2>CodeHack</h2>
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">SUBSRIBE</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">SUBSRIBE 25k</button>
         </div>
+        
         <hr>
+        
         <div class="row description">
           <h2>Description</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa totam temporibus obcaecati accusantium
             corrupti, nobis quis unde? Fugit aut enim sint temporibus non deleniti, officia necessitatibus perferendis
-            culpa dolorem molestiae!</p>
+          culpa dolorem molestiae!</p>
         </div>
-      </div>
-      <hr>
-      <div class="row comments">
+        
+        <hr>
+        
+        <div class="row comments">
+          <ul class="list-unstyled">
+            <h2>Comments</h2>
+            <li class="media">
+              <img src="http://lorempixel.com/100/100/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Leave a comment...</h5>
+                <form>
+                  <div class="form-row align-items-center">
+                    <div class="col-9">
+                      <label class="sr-only" for="inlineFormInput">Comment</label>
+                      <input type="text" class="form-control" id="inlineFormInput" placeholder="Enter your comment here...">
+                    </div>
+                    <div class="col-3">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
 
+            <hr>
+            
+            <li class="media my-4">
+              <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Comment 1</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
+                maxime culpa
+              </div>
+            </li>
+            <li class="media my-4">
+              <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Comment 2</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit
+                deleniti voluptatibus
+              </div>
+            </li>
+            <li class="media my-4">
+              <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Comment 3</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis iure ipsum, illo, doloribus non
+                magnam, deleniti
+              </div>
+            </li>
+            <li class="media my-4">
+              <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Comment 4</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
+                maxime culpa
+              </div>
+            </li>
+            <li class="media">
+              <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+              <div class="media-body">
+                <h5 class="mt-0 mb-1">Comment 5</h5>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit
+                deleniti voluptatibus
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- left column -->
+
+      <div class="col-3">
+        <h4>Up Next</h4>
         <ul class="list-unstyled">
-          <h2>Comments</h2>
           <li class="media">
-            <img src="http://lorempixel.com/100/100/" class="mr-3" alt="...">
+            <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 1</h5>
+              <h5 class="mt-0 mb-1">Video 1</h5>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis iure ipsum, illo, doloribus non
               magnam, deleniti
             </div>
@@ -71,7 +144,7 @@
           <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 2</h5>
+              <h5 class="mt-0 mb-1">Video 2</h5>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
               maxime culpa
             </div>
@@ -79,15 +152,15 @@
           <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 3</h5>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit
-              deleniti voluptatibus
+              <h5 class="mt-0 mb-1">Video 3</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
+              voluptatibus
             </div>
           </li>
           <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 4</h5>
+              <h5 class="mt-0 mb-1">Video 4</h5>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis iure ipsum, illo, doloribus non
               magnam, deleniti
             </div>
@@ -95,7 +168,7 @@
           <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 5</h5>
+              <h5 class="mt-0 mb-1">Video 5</h5>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
               maxime culpa
             </div>
@@ -103,71 +176,39 @@
           <li class="media">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Comment 6</h5>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit
-              deleniti voluptatibus
+              <h5 class="mt-0 mb-1">Video 6</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
+              voluptatibus
+            </div>
+          </li>
+          <li class="media">
+            <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Video 7</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
+              voluptatibus
+            </div>
+          </li>
+          <li class="media">
+            <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Video 8</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
+              voluptatibus
+            </div>
+          </li>
+          <li class="media">
+            <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Video 9</h5>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
+              voluptatibus
             </div>
           </li>
         </ul>
-      </div>
-      <hr>
-    </div>
-    <div class="col-3">
-      <h4>Up Next</h4>
-      <ul class="list-unstyled">
-        <li class="media">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 1</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis iure ipsum, illo, doloribus non
-            magnam, deleniti
-          </div>
-        </li>
-        <hr>
-        <li class="media my-4">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 2</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
-            maxime culpa
-          </div>
-        </li>
-        <li class="media my-4">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 3</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
-            voluptatibus
-          </div>
-        </li>
-        <li class="media my-4">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 4</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut facilis iure ipsum, illo, doloribus non
-            magnam, deleniti
-          </div>
-        </li>
-        <li class="media my-4">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 5</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolorem odit laudantium non alias error
-            maxime culpa
-          </div>
-        </li>
-        <li class="media">
-          <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
-          <div class="media-body">
-            <h5 class="mt-0 mb-1">Video 6</h5>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis fuga laboriosam sit deleniti
-            voluptatibus
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </div>
+      </div> <!-- right column -->
+    </div> <!-- row -->
+  </div> <!-- container -->
 
   <!-- Navigation Bar -->
   <!-- Logo -->
@@ -182,14 +223,14 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,8 +1,15 @@
 /* css */
 
 .video {
-  height: 500px;
- 
+  height: 600px;
+}
+
+.title {
+  padding: 20px 0px;
+}
+
+.btn {
+  border-radius: 10px;
 }
 
 iframe {
@@ -17,16 +24,17 @@ iframe {
 .comments {
   height: 500px;
 }
-.comments img{
-  border-radius:50%;
+
+.comments img {
   width:100px;
   height:100px;
+  border-radius:50%;
 }
+
 .btn {
   margin:8px;
-  
 }
-.left-column{
-  margin:5px;
-} 
- 
+
+.main {
+  margin: 10px;
+}
