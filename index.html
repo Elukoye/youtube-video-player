@@ -23,16 +23,11 @@
     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><button class="btn btn-danger  my-2 my-sm-0" type="submit">Sign In</button></li>
-      </ul>
-    </div>
+    <form class="form-inline">
+      <input class="form-control mr-sm-12 search-box" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <button class="btn btn-danger  my-2 my-sm-0" type="submit">Sign In</button>
   </nav>
 
   <div class="container-fluid">
@@ -48,7 +43,12 @@
 
         <div class="row title">
           <h2>CodeHack</h2>
-          <button class="btn btn-danger my-2 my-sm-0" type="submit">SUBSRIBE 25k</button>
+          <button class="btn btn-danger my-2 my-sm-0" type="submit">SUBSCRIBE 25k</button>
+          <div class="buttons">
+            <i class="fas fa-share"></i>Share
+            <i class="far fa-thumbs-up"></i>Like
+            <i class="far fa-thumbs-down"></i>Dislike
+          </div>
         </div>
         
         <hr>
@@ -173,7 +173,7 @@
               maxime culpa
             </div>
           </li>
-          <li class="media">
+          <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0 mb-1">Video 6</h5>
@@ -181,7 +181,7 @@
               voluptatibus
             </div>
           </li>
-          <li class="media">
+          <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0 mb-1">Video 7</h5>
@@ -189,7 +189,7 @@
               voluptatibus
             </div>
           </li>
-          <li class="media">
+          <li class="media my-4">
             <img src="http://lorempixel.com/200/150/" class="mr-3" alt="...">
             <div class="media-body">
               <h5 class="mt-0 mb-1">Video 8</h5>
