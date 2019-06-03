@@ -1,7 +1,8 @@
 /* css */
 
 .video {
-  height: 700px;
+  height: 500px;
+ 
 }
 
 iframe {
@@ -16,3 +17,16 @@ iframe {
 .comments {
   height: 500px;
 }
+.comments img{
+  border-radius:50%;
+  width:100px;
+  height:100px;
+}
+.btn {
+  margin:8px;
+  
+}
+.left-column{
+  margin:5px;
+} 
+ 
