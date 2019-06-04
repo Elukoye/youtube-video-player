@@ -1,68 +1,37 @@
 /* css */
 
-.video {
-  height: 650px;
-}
-
-.title {
-  padding: 20px 0px;
-}
-
-.btn {
-  border-radius: 10px;
-}
-
-iframe {
-  height: 100%;
-  width: 100%;
-}
-
-.description {
-  height: 100px;
-}
-
-.comments {
-  height: 500px;
-}
-
-.comments img {
-  width:100px;
-  height:100px;
-  border-radius:50%;
-}
-
-.btn {
-  margin:8px;
+.navbar {
+  grid-area: header;
+  background-color: green;
 }
 
 .main {
-  margin: 10px;
+  grid-area: main;
+  background-color: blue; 
 }
 
-.buttons {
-  display: inline-block;
-  padding-top: 10px;
+.sidebar {
+  grid-area: sidebar;
+  background-color: yellow;
 }
 
-.buttons i {
-  padding-left: 10px;
+.container {
+  color: white;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header"
+    "main sidebar";
 }
 
-nav form {
-  margin: 0 auto;
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
 }
 
-nav .search-box {
-  width: 500px !important;
-}
-
-.navbar-brand {
-  font-size: 30px;
-  font-weight: bold;
-  font-family: Helvetica;
-}
-
-.fa-youtube {
-  color: red;
-  padding-left: 0px 5px;
+.video-thumbnail {
+  width: 100%;
+  height: 150px;
+  background-color: purple;
 }
