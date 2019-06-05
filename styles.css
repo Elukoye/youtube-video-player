@@ -5,7 +5,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -15,14 +14,13 @@ html {
 body{
   color: rgb(10, 10, 10);
   font-family: Roboto, Arial, sans-serif;
-  /*line-height: 1.7;*/
   font-weight: normal;
 }
 
 /* **************************************** icons */
 
 .material-icons{
-  color: darkgrey;
+  color: #666;
   font-size: 2.5rem;
 }
 
@@ -30,21 +28,21 @@ body{
 
 .container {
   display: grid;
-  grid-template-columns: 67% 33%;
-  grid-template-rows: auto;
   grid-template-areas: 
   "header header"
   "main sidebar";
+  grid-template-columns: 67% 33%;
+  grid-template-rows: auto;
 }
 
 .main {
-  padding:15px 7px 15px 15px ;
   grid-area: main;
+  padding:15px 7px 15px 15px ;
 }
 
 .sidebar {
-  padding:15px 15px 15px 7px;
   grid-area: sidebar;
+  padding:15px 15px 15px 7px;
 }
 
 /* **************************************** navbar */
@@ -72,7 +70,7 @@ body{
 
 .search{
   display: flex;
-  width: 70rem;
+  width: 60rem;
   background-color: #ececec;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
@@ -118,10 +116,11 @@ body{
 /* video */
 
 .video{
-  height:600px;
+  height:50rem;
 }
 
 .video iframe{
+  border: none;
   height:100%;
   width:100%;
 }
@@ -151,9 +150,9 @@ body{
 }
 
 .views-menu-row .views h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
-  color: #777;
+  color: #888;
 }
 
 .views-menu-row .video-menu {
@@ -166,7 +165,7 @@ body{
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
-  color: #777;
+  color: #888;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #fff;
 }
@@ -183,6 +182,57 @@ body{
   font-size: 1.5rem;
   margin-left: 0.5rem;
   color: #777;
+}
+
+/* channel */
+
+.video-channel {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.video-channel-image {
+  /*flex-grow: 1;*/
+}
+
+.video-channel-image img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.video-channel-details {
+  /*flex-grow: 6;*/
+  padding-left: 1.5rem;
+}
+
+.video-channel-details .published-date {
+  color: #888;
+}
+
+.video-channel-details p {
+  padding-top: 2rem;
+}
+
+.video-channel-details p:last-child {
+  color: #888;
+}
+
+.video-channel-subscribe {
+  flex-basis: 20rem;
+}
+
+.video-channel-subscribe button {
+  float: right;
+  color: #fff;
+  font-weight: 300;
+  background-color: rgb(204, 0, 0);
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
 }
 
 /* description */
