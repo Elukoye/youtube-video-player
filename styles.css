@@ -51,8 +51,10 @@ body{
   grid-area: sidebar;
  
 }
+
 .material-icons{
-  color:grey;
+  color: darkgrey;
+  font-size: 2.5;
 }
 
 .container {
@@ -75,26 +77,52 @@ body{
   height: 150px;
   background-color: purple;
 }
-.logo{
-  height:5rem;
 
-  
-}
-
-.sign-in button{
-   color:#fff;
-   background: red;
-   font-size:2rem ;
-   width:25%;
-   border-radius:5px;
-   height:5rem;
-   line-height:0.5rem; 
-   padding-bottom: 1.5rem;
-   
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  width: 15rem;
 }
 
 .search{
-  display:flex;
+  display: flex;
+  width: 70rem;
+  background-color: #ececec;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.search input {
+  width: 85%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+
+.search .search-button {
+  width: 15%;
+  border-left: 1px solid #ddd;
+  display: flex;
   align-items: center;
-  width:50rem;
+  justify-content: center;
+}
+
+.search-button i {
+  color: #666;
+  font-size: 2rem;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  margin-right: 15px;
+}
+
+.sign-in i:last-child {
+  font-size: 4rem;
 }
