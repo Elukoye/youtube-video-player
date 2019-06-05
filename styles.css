@@ -13,8 +13,9 @@ html {
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+  color: rgb(10, 10, 10);
+  font-family: Roboto, Arial, sans-serif;
+  /*line-height: 1.7;*/
   font-weight: normal;
 }
 
@@ -22,15 +23,14 @@ body{
 
 .material-icons{
   color: darkgrey;
-  font-size: 2.5;
+  font-size: 2.5rem;
 }
 
 /* **************************************** layout */
 
 .container {
-  color: white;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 67% 33%;
   grid-template-rows: auto;
   grid-template-areas: 
   "header header"
@@ -55,6 +55,7 @@ body{
   align-items: center;
   grid-area: header;
   background-color:#fff;
+  box-shadow: 0 3px 3px #eee;
 }
 
 /* logo section */
@@ -125,11 +126,78 @@ body{
   width:100%;
 }
 
+/* title */
+.video-header-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.title-row h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.views-menu-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.views-menu-row .views {
+  padding-bottom: 0.5rem;
+}
+
+.views-menu-row .views h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.views-menu-row .video-menu {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.video-menu-button {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  color: #777;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #fff;
+}
+
+.button-underline {
+  border-bottom: 3px solid #ccc;
+}
+
+.views-menu-row .video-menu i {
+
+}
+
+.views-menu-row .video-menu .button-label {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: #777;
+}
+
+/* description */
+.description {
+  /*background-color: purple;*/
+  height: 175px;
+  font-size: 3rem;
+}
+
 /* **************************************** side-bar */
 
 .sidebar-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .video-thumbnail {
