@@ -197,11 +197,43 @@ body{
 .sidebar-container {
   display: flex;
   flex-direction: column;
+  
+}
+.upnext-section{
+  /* display:flex;
+  align-items: baseline;
+  justify-content:flex-end;  */
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  margin:15px;
 }
 
-.video-thumbnail {
-  width: 100%;
-  height: 150px;
-  background-color: purple;
+.upnext-section .upnext-title{
+  width:50%;
+  
+}
+
+.upnext-section .button-auto{
+  width:50%;
+  display:inline-flex;
+}
+
+.video-box{
+  display:inline-flex ;
+ 
+ 
+}
+
+.video-thumbnail{
+  width:50%;
+  align-self: flex-end;
+}
+.video-thumbnail img {
+   width:50%;
+   align-self: flex-start;
+  
+}
+.video-details{
+
 }
