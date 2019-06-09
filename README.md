@@ -1,7 +1,7 @@
 # Embedding Images and Video
 
-## Course: HTML & CSS3
-## Project: Embedding Images and Video
+### Course: HTML & CSS3
+### Project: Embedding Images and Video
 
 This project was completed as part of the Microverse curriculum.
 
