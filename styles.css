@@ -1,0 +1,309 @@
+/* styles.css */
+
+/* **************************************** basic styling */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    color: rgb(10, 10, 10);
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    display: block;
+    height: 1px;
+    margin: 1.0rem 0;
+}
+
+/* **************************************** icons */
+
+.material-icons {
+    color: #666;
+    font-size: 2.5rem;
+}
+
+/* **************************************** layout */
+
+.container {
+    display: grid;
+    grid-template-areas: "header header" "main sidebar";
+    grid-template-columns: 67% 33%;
+    grid-template-rows: auto;
+}
+
+.main {
+    grid-area: main;
+    padding: 15px 7px 15px 15px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding: 15px 15px 15px 7px;
+}
+
+/* **************************************** navbar */
+
+.navbar {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 3px 3px #eee;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+}
+
+/* logo section */
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    width: 15rem;
+}
+
+/* search section */
+
+.search {
+    background-color: #ececec;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    display: flex;
+    width: 60rem;
+}
+
+.search input {
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    width: 85%;
+}
+
+.search .search-button {
+    align-items: center;
+    border-left: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+}
+
+.search-button i {
+    color: #666;
+    font-size: 2rem;
+}
+
+/* sign-in section */
+
+.sign-in {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    width: 25rem;
+}
+
+.sign-in i:last-child {
+    font-size: 4rem;
+}
+
+/* **************************************** main */
+
+/* video */
+
+.video {
+    height: 50rem;
+}
+
+.video iframe {
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* title */
+
+.video-header-section {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.title-row h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.views-menu-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.views-menu-row .views {
+    padding-bottom: 0.5rem;
+}
+
+.views-menu-row .views h3 {
+    color: #888;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.views-menu-row .video-menu {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-menu-button {
+    align-items: center;
+    border-bottom: 3px solid #fff;
+    color: #888;
+    display: flex;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.button-underline {
+    border-bottom: 3px solid #ccc;
+}
+
+.views-menu-row .video-menu .button-label {
+    color: #777;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+
+/* channel */
+
+.video-channel {
+    display: flex;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.video-channel-image img {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+}
+
+.video-channel-details {
+    padding-left: 1.5rem;
+}
+
+.video-channel-details .published-date {
+    color: #888;
+}
+
+.video-channel-details p {
+    padding-top: 2rem;
+}
+
+.video-channel-details p:last-child {
+    color: #888;
+}
+
+.video-channel-subscribe {
+    flex-basis: 20rem;
+}
+
+.video-channel-subscribe button {
+    background-color: rgb(204, 0, 0);
+    border: none;
+    border-radius: 0.25rem;
+    color: #fff;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 300;
+    outline: none;
+    padding: 1rem 1.5rem;
+}
+
+/* description */
+
+.description {
+    font-size: 3rem;
+    height: 175px;
+}
+
+/* **************************************** side-bar */
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.upnext-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upnext-section .upnext-title {
+    align-items: center;
+    display: inline-flex;
+    flex-grow: 1;
+}
+
+.upnext-title header {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.upnext-section .button-auto {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+}
+
+.upnext-section .button-auto i {
+    color: #888;
+    font-size: 4.0rem;
+    order: 1;
+    padding-left: 0.5rem;
+}
+
+.button-auto span {
+    order: 2;
+}
+
+.video-box {
+    display: inline-flex;
+    margin: 0.5rem;
+}
+
+.video-thumbnail img {
+    height: 8.3rem;
+    width: 16rem;
+}
+
+.video-details {
+    margin-left: 0.5rem;
+}
+
+.video-details header {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    line-height: 1.6rem;
+}
+
+.video-details p {
+    color: #888;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
