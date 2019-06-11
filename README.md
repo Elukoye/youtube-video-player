@@ -2,7 +2,7 @@
 
 ### Course: HTML & CSS3
 ### Project: Embedding Images and Video
-### Contributers
+### Contributors
 * [Michael McGee](https://github.com/michael-mcgee)
 * [Emogene Akwiri](https://github.com/Elukoye)
 ### Project Goal
